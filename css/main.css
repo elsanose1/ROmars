@@ -14,6 +14,9 @@ body{
   padding: 0px;
   font-family: 'Noto Sans KR', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .cont{
   padding-left: auto;
   padding-right: auto;
@@ -176,3 +179,121 @@ body{
   text-transform: capitalize;
 }
 /*____________ futures __________*/
+/*____________ services __________*/
+.special-h{
+  font-size: 60px;
+  margin: 0 0 10px;
+  color: #9e9e9eb3;
+  text-align: center;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.services{
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+}
+.services .services-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+  grid-gap: 20px;
+  margin-top: 80px;
+}
+.services .services-cont .serv{
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .services .services-cont .serv{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.services .services-cont .serv i{
+  color: var(--mcolor);
+  font-size: 40px;
+  flex-basis: 60px;
+}
+.services .services-cont .serv .text{
+  flex: 1;
+}
+.services .services-cont .serv .text h3{
+  margin: 0 0 20px;
+}
+.services .services-cont .serv .text p{
+  color: #444444;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.services .services-cont .serv-img{
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .services .services-cont .serv-img{
+    display: none;
+  }
+}
+.services-cont .serv-img::before{
+  content: "";
+  position: absolute;
+  background-color: #9e9e9e;
+  width: 100px;
+  height: calc(100% + 100px);
+  right: 0;
+  top: -50px;
+  z-index: -1;
+}
+.services .services-cont .serv-img img{
+  width: 200px;
+}
+/*____________ services __________*/
+/*____________ contact __________*/
+.contact{
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+  background-color: #efefef;
+}
+.contact .info{
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+  text-align: center;
+}
+.contact .info p{
+  font-size: 40px;
+  font-weight: 800;
+  color: #635f5f;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+.contact .info a{
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--mcolor);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contact .info .social{
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+}
+.contact .info .social i{
+  color: var(--mcolor);
+  margin-left: 10px;
+}
+/*____________ contact __________*/
+/*____________ footer __________*/
+.footer{
+  background-color: #635f5f;
+  color : white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span{
+  font-weight: bold;
+  color: #000000;
+}
+/*____________ footer __________*/
